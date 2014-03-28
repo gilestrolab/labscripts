@@ -34,6 +34,10 @@ sudo sh -c 'echo SUBSYSTEM==\"usb\", ATTRS{idVendor}==\"1e10\", ATTRS{idProduct}
 # we would like scientific packages:
 yaourt -S imagej r octave python{2,}-scikit-learn  python{2,}-scipy imagemagick
 
+
+# we would like scientific packages:
+yaourt -S python-pip python2-pip
+
 # setting up ssh server
 sudo systemctl enable ssh.service 
 sudo systemctl start ssh.service
