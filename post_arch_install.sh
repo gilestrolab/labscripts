@@ -24,7 +24,7 @@ yaourt -S bash-completion
 
 ### Video capture
 # what we need for the lab
-yaourt -S opencv libdc1394-git mplayer ffmpeg gstreamer gstreamer0.10-plugins 
+yaourt -S opencv libdc1394-git mplayer ffmpeg gstreamer gstreamer0.10-plugins mencoder
 # it is important that coriender is installed AFTER libdc1394-git
 yaourt -S coriander
 # adding udev rule for our camera
