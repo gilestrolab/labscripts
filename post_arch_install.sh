@@ -35,11 +35,11 @@ sudo sh -c 'echo SUBSYSTEM==\"usb\", ATTRS{idVendor}==\"1e10\", ATTRS{idProduct}
 yaourt -S imagej r octave python{2,}-scikit-learn  python{2,}-scipy imagemagick
 
 
-# we would like scientific packages:
+# Python's pips
 yaourt -S python-pip python2-pip
 
 # system tools
-yaourt -S htop tree
+yaourt -S htop tree rsync
 
 
 # setting up ssh server
