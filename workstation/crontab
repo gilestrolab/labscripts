@@ -1,5 +1,5 @@
 0 * * * * /usr/bin/mount -a
-10 * * * * /usr/bin/rsync -ax /mnt/psv_results/ /data/psv_results/
+10 * * * * /usr/bin/rsync -ax /mnt/ethoscope_results/ /data/ethoscope_results/
 15 * * * * /usr/bin/rsync -ax /mnt/dam_daily/ /data/dam_daily/
 20 * * * * /usr/bin/Rscript /root/update_rethomics.R
 
