@@ -1,13 +1,8 @@
-# /etc/fstab: static file system information.
-#
-# Use 'blkid' to print the universally unique identifier for a device; this may
-# be used with UUID= as a more robust way to name devices that works even if
-# disks are added and removed. See fstab(5).
-#
-# <file system>                           <mount point>  <type>  <options>  <dump>  <pass>
-UUID=4BA4-AF5F                            /boot/efi      vfat    defaults,noatime 0       2
-UUID=3d3c7120-6f5f-4727-8c88-0be07abd7934 /              ext4    defaults,noatime,discard 0       1
-tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0       0
+# This file shows three line to append to /etc/fstab
+
+# A partition should be labed 'data'. typically, this is on a largeish hard drive
 LABEL=data	/data/	ext4	defaults,noatime,discard 0       1
-//stumpfnas2.bc.ic.ac.uk/gglab/psv_results /mnt/psv_results cifs auto,x-systemd.automount,username=gglab,password=XXXXXXXX 0 0
+
+# mount NAS drives. CHANGE XXXXXXXXX for the password
+//stumpfnas2.bc.ic.ac.uk/gglab/ethoscope_results /mnt/ethoscope_results cifs auto,x-systemd.automount,username=gglab,password=XXXXXXXX 0 0
 //nas-1.gilest.ro/gglab/sleepData/dailyData /mnt/dam_daily cifs auto,x-systemd.automount,username=student,password=XXXXXXXX 0 0
