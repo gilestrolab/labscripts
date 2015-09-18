@@ -1,0 +1,1 @@
+0 * * * * rsync -av /psv_results/ /mnt/nas-backup/ethoscope_results  --exclude=lost+found --exclude="*.db-journal" --exclude="*.zip"
