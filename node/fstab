@@ -1,3 +1,7 @@
-#...
+#Change XXXXXXXXXX to the actual password
 //stumpfnas2.bc.ic.ac.uk/gglab /mnt/nas-backup cifs user=gglab,password=XXXXXXXX 0 0
+# for box.com NAS:
+https://dav.box.com/dav /mnt/box.com davfs user,noauto,file_mode=666,dir_mode=777 0 1
+
+
 
