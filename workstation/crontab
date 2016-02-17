@@ -2,6 +2,8 @@
 10 * * * * /usr/bin/rsync -ax /mnt/ethoscope_results/ /data/ethoscope_results/
 15 * * * * /usr/bin/rsync -ax /mnt/dam_daily/ /data/dam_daily/
 20 * * * * /usr/bin/Rscript /root/update_rethomics.R
+30 * * * * rsync -avhP --size-only  --inplace  /mnt/box.com/gglab/shared/ethoscope_results/ /data/ethoscope_results/--exclude=lost+found --exclude="*.db-journal" --exclude="*.zip"
+
 
 
 
