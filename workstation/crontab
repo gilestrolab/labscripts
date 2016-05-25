@@ -1,9 +1,8 @@
-0 * * * * /usr/bin/mount -a
-10 * * * * /usr/bin/rsync -ax /mnt/ethoscope_results/ /data/ethoscope_results/
-15 * * * * /usr/bin/rsync -ax /mnt/dam_daily/ /data/dam_daily/
-20 * * * * /usr/bin/Rscript /root/update_rethomics.R
-20 * * * * /usr/bin/Rscript /root/cache_ethoscope_results.R
-30 * * * * /bin/bash /root/fetch_ethoscope_results.sh
+0 * * * * /usr/bin/Rscript /root/update_rethomics.R
+15 * * * * /bin/bash /root/fetch_ethoscope_results.sh
+30 * * * * /usr/bin/Rscript /root/cache_ethoscope_results.R
+45 * * * * /bin/bash /root/fetch_ethoscope_videos.sh
+
 
 
 
