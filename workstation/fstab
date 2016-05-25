@@ -1,9 +1,5 @@
 # This file shows three line to append to /etc/fstab
-
 # A partition should be labed 'data'. typically, this is on a largeish hard drive
 LABEL=data	/data/	ext4	defaults,noatime,discard 0       1
-
 # mount NAS drives. CHANGE XXXXXXXXX for the password
-//stumpfnas2.bc.ic.ac.uk/gglab/ethoscope_results /mnt/ethoscope_results cifs auto,x-systemd.automount,username=gglab,password=XXXXXXXX 0 0
-//nas-1.gilest.ro/gglab/sleepData/dailyData /mnt/dam_daily cifs auto,x-systemd.automount,username=student,password=XXXXXXXX 0 0
-https://dav.box.com/dav /mnt/box.com davfs user,noauto,file_mode=666,dir_mode=777 0 0
+//nas.lab.gilest.ro/gglab/ethoscope_results /mnt/ethoscope_results cifs auto,x-systemd.automount,username=quentin,password=XXXXXXXX 0 0
