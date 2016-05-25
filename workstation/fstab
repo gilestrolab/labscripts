@@ -2,4 +2,4 @@
 # A partition should be labed 'data'. typically, this is on a largeish hard drive
 LABEL=data	/data/	ext4	defaults,noatime,discard 0       1
 # mount NAS drives. CHANGE XXXXXXXXX for the password (and put your username)
-//nas.lab.gilet.ro/ /mnt/nas cifs auto,x-systemd.automount,user=quentin,password=XXXXXXXX 0 0
+//nas.lab.gilest.ro/ /mnt/nas cifs auto,x-systemd.automount,user=quentin,password=XXXXXXXX 0 0
