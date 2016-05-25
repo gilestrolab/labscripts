@@ -1,4 +1,2 @@
-0 * * * * rsync -av /psv_results/ /mnt/nas-backup/ethoscope_results  --exclude=lost+found --exclude="*.db-journal" --exclude="*.zip"
-#box.com is a dav fs, so we need a few tweaks:
-30 * * * * /bin/bash /root/push_ethoscope_results.sh
-
+0 * * * * /bin/bash /root/push_ethoscope_results.sh
+30 * * * * /bin/bash /root/push_ethoscope_videos.sh
