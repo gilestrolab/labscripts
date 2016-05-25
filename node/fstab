@@ -1,2 +1,2 @@
 #Change XXXXXXXXXX to the actual password
-//nas.lab.gilet.ro/ /mnt/nas cifs auto,x-systemd.automount,user=node,password=XXXXXXXX 0 0
+//nas.lab.gilest.ro/ /mnt/nas cifs auto,x-systemd.automount,user=node,password=XXXXXXXX 0 0
