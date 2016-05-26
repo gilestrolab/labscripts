@@ -3,7 +3,7 @@
 # during backup 
 backup_service=ethoscope_backup
 result_dir=ethoscope_results/
-target_prefix=/mnt/dav/auto_generated_data/
+target_prefix=/mnt/nas/auto_generated_data/
 (
   ## we use flock to ensure npo concurent backups
   # see http://stackoverflow.com/questions/169964/how-to-prevent-a-script-from-running-simultaneously
