@@ -1,2 +1,2 @@
-0 * * * * /bin/bash /root/push_ethoscope_results.sh
+0 10,22 * * * /bin/bash /root/push_ethoscope_results.sh
 30 * * * * /bin/bash /root/push_ethoscope_videos.sh
