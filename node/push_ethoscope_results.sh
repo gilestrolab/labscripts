@@ -14,6 +14,6 @@ target_prefix=/mnt/nas/auto_generated_data/
   rsync -avhP --size-only  --inplace  /$result_dir/  $target_prefix/$result_dir/  --exclude=lost+found --exclude="*.db-journal" --exclude="*.zip" --exclude="*.db.*"
   systemctl start $backup_service
 
-) 200>/var/lock/.myscript.exclusivelock
+) 200>/var/lock/.$backup_service.exclusivelock
 
 
