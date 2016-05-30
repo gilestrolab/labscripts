@@ -1,7 +1,7 @@
 #!/bin/bash
 
 result_dir=ethoscope_results/
-source_prefix=/mnt/dav/auto_generated_data/
+source_prefix=/mnt/nas/auto_generated_data/
 target_prefix=/data/
 (
   ## we use flock to ensure npo concurent backups
