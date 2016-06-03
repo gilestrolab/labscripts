@@ -11,7 +11,7 @@ target_prefix=/mnt/nas/auto_generated_data/
   flock -x -w 10 200 || exit 1
   systemctl stop $backup_service && 
   sleep 30 &&
-  rsync -avh --size-only  --inplace  /$result_dir/  $target_prefix/$result_dir/  --exclude=lost+found --exclude="*.db-journal" --exclude="*.zip" --exclude="*.db.*"
+  python2 /root/incremental_size_upload.py  -s /$result_dir/  -d $target_prefix/$result_dir/
   systemctl start $backup_service
 
 ) 200>/var/lock/.$backup_service.exclusivelock
