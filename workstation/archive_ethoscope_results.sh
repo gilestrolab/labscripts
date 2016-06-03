@@ -4,7 +4,7 @@
 #!/bin/bash
 src=/data/ethoscope_results/
 dst_prefix=/mnt/box.com
-dst_dir=/shared/ethoscope_results
+dst_dir=gglab/shared/ethoscope_results
 (
   flock -x -w 10 200 || exit 1
   umount $dst_prefix
