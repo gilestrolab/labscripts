@@ -7,5 +7,8 @@ dst_prefix=/mnt/box.com
 dst_dir=/shared/ethoscope_results
 (
   flock -x -w 10 200 || exit 1
+  umount dst_prefix
+  mount dst_prefix &&
   rsync -ahW --stats --size-only  --inplace  $src  $dst_prefix/$dst_dir/
+  umount dst_prefix
 ) 200>/var/lock/.$(basename $src).exclusivelock
