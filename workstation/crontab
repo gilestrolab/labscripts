@@ -2,6 +2,8 @@
 15 * * * * /bin/bash /root/fetch_ethoscope_results.sh
 30 * * * * /usr/bin/Rscript /root/cache_ethoscope_results.R
 45 * * * * /bin/bash /root/fetch_ethoscope_videos.sh
+MAILTO="quentin.geissmann13@imperial.ac.uk"
+0 11 * * 7 /bin/bash /root/archive_ethoscope_results.sh
 
 
 
