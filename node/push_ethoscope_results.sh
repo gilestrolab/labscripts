@@ -12,6 +12,7 @@ target_prefix=/mnt/nas/auto_generated_data/
   systemctl stop $backup_service && 
   sleep 30 &&
   python2 /root/incremental_size_upload.py  -s /$result_dir/  -d $target_prefix/$result_dir/
+  sync
   systemctl start $backup_service
 
 ) 200>/var/lock/.$backup_service.exclusivelock
