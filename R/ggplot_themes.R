@@ -2,7 +2,7 @@
 # Ideally, you will save it in your workspace, and source it (`source(ggplot_themes.R)`)
 # then, you can simply add themes to plots. For instance:
 ## make the plot:
-# `pl <- ethosgramPlot(...)`
+# `pl <- ethogramPlot(...)`
 # # change theme and show:
 # `pl + ethogram_theme`
 
