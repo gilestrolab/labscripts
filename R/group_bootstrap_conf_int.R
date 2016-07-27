@@ -23,6 +23,7 @@
 #'ci_dt_mean <- groupBootstrapCI(Sepal.Length, iris, Species, R=1000)
 #' pl <- ggplot(ci_dt_mean, aes(Species,Sepal.Length))+ geom_bar(stat="identity")+
 #'     geom_errorbar(aes(min=low_ci, max=high_ci), width = 0.25)
+#' pl
 #' # compares variance between groups
 #' ci_dt_var <- groupBootstrapCI(Sepal.Length, iris, Species, R=10000, FUN= var)
 #' # we can just use the same plot, but change the data
