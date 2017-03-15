@@ -1,2 +1,3 @@
 0 10,22 * * * /bin/bash /root/push_ethoscope_results.sh
 30 * * * * /bin/bash /root/push_ethoscope_videos.sh
+45 * * * * /usr/bin/Rscript /root/make_db_index.R
