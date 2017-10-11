@@ -12,6 +12,8 @@ target_prefix=/mnt/nas/auto_generated_data/
   systemctl stop $backup_service && 
   sleep 30 &&
   python2 /root/incremental_size_upload.py  -s /$result_dir/  -d $target_prefix/$result_dir/
+  Rscript /root/make_db_index.R 
+  cp /$result_dir/index.txt  $target_prefix/$result_dir/index.txt
   sync
   systemctl start $backup_service
 
